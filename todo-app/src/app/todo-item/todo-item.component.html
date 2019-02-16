@@ -1,0 +1,8 @@
+<li>
+  <span appLineThrough [lineThrough]="todo.completed">
+    {{ todo.title }}
+  </span> 
+  &nbsp;
+  <input type="checkbox" [value]="todo.completed" (change)="handleToggle()" />
+  <button (click)="deleteHandler()">Delete</button>
+</li>
